@@ -660,15 +660,12 @@ background-color: #31D0AA;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-title{
-    color: var(--NAVY-BLUE, #2E2F42);
+    color: #2E2F42;
     text-align: center;
-    font-family: Roboto;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 24px;
-    /* 150% */
-    letter-spacing: 0.32px;
+    line-height: 1.5;
+    letter-spacing: 0.02;
     margin-bottom: 16px;
 }
 .form-box{
@@ -686,35 +683,37 @@ background-color: #31D0AA;
 
 .form-hero{
     position: relative;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    width: 408px;
+    width: 408px;*/
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
 }
 .input-hero{
     width: 360px;
     height: 40px;
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
     padding-left: 38px;
     border-radius: 4px;
-    border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+    border: 1px solid rgba(46, 47, 66, 0.40);
 }
 .input-hero:hover,
 .input-hero:focus {
     fill: #FFFFFF;
     border: 1px solid #4D5AE5;
 }
-.input-hero:focus-within {
-    border-color: #4D5AE5;
-}
+
 .svg-form{
     position: absolute;
-    top: 10px;
+    bottom: 11px;
     left: 16px;
     fill:#2E2F42;
-    
 }
+
+.input-hero:focus+.svg-form{
+fill: #4D5AE5;
+}
+
 .form-container{
     position: absolute;
     top: 50%;
@@ -762,8 +761,9 @@ background-color: #31D0AA;
     text-decoration: underline;
     line-height: 1.17;
     letter-spacing: 0.04em;
+    
 }
-.send-form{
+.button-modal{
     margin-left: auto;
     margin-right: auto;
     display:block;
@@ -775,8 +775,21 @@ background-color: #31D0AA;
     border-radius: 4px;
     background: var(--IRIS, #4D5AE5);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: var(--WHITE, #FFF);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04;
+    cursor: pointer;
+    border: none;
+    margin-top: 24px;
 }
 
+.button-modal:hover,
+.button-modal:focus {
+    background-color: #404BBF;
+}
 .checkbox-label-text{
     color: var(--LIGHT-SLATE, #8E8F99);
     font-family: Roboto, sans-serif;
