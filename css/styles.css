@@ -592,3 +592,20 @@ background-color: #31D0AA;
     list-style-type: none;
     gap: 16px;
 }
+
+      /* form */
+
+.input-footer{
+border: none;
+}      
+
+.button-footer{
+display: inline-flex;
+padding: 8px 24px;
+justify-content: center;
+align-items: center;
+gap: 16px;
+border-radius: 4px;
+background: var(--IRIS, #4D5AE5);
+border: none;
+}
