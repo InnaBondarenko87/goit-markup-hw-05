@@ -482,7 +482,7 @@
 
 
     <!--Modalne wikno--><!-----BACKDROP----->
-    <div class="backdrop is-hidden">
+    <div class="backdrop">
       <div class="form-container">
         <button type="button" class="modal-close">
           <svg width="8" height="8" class="close-icon">
@@ -536,25 +536,16 @@
             placeholder="Text input"></textarea>
         </label>
 
-        <div>
-          <input id="user-privacy"
-          type="checkbox"
-          value="true"
-          name="user-privacy"
-          class="visually-hidden checkbox-addition-privacy">
-          <label class="checkbox-label-text" for="user-privacy">
-            <span class="text-first-part">
-              <svg class="icon-checkbox-boxes-one"
-              widht="10" height="8">
-              <use href="./images/icons.svg#icon-checkbox">
-              </use>
-              </svg> 
-            </span>
-            I accept the terms and conditions of the
-            <a class="text-privat" href="./index.html">Privacy Policy</a>
-          </label>
-         </div>
-          <button class="button-modal" type="submit">Send</button>
+          <label class="accept" for="">
+            <input class="accept-checkbox"
+            type="checkbox"
+            name="privacy-policy"/>
+              <legend class="page-accent">I accept the terms and conditions of the
+                <a class="text-privat" href="./index.html">Privacy Policy</a>
+              </legend>
+          </label>   
+        <button class="button-modal" type="submit">Send</button>
+               
        </form>
         
      </div>
