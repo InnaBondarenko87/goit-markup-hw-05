@@ -700,6 +700,7 @@ margin-left: 16px;
     min-height: 584px;
     background: #fcfcfc;
     border-radius: 4px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 72px 24px 24px 24px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -741,15 +742,15 @@ margin-left: 16px;
     background-color: #404bbf;
     border: none;
 }
-.modal-icon:hover 
+/* .modal-icon:hover, 
 .modal-icon:focus {
     fill: #FFFFFF;
-}
+} */
 
-/* .modal-close:hover .close-icon
+.modal-close:hover .close-icon,
 .modal-close:focus .close-icon{
     fill: #FFFFFF;
-} */
+} 
 
 .form-hero{
     position: relative;
@@ -769,6 +770,7 @@ margin-left: 16px;
     border: 1px solid rgba(46, 47, 66, 0.40);
     outline:transparent;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-hero:focus {
@@ -897,13 +899,13 @@ justify-content: center;
 align-items: center;
 height: 16px;
 width: 16px;
-display: inline-flex;
 border: 1px solid rgba(46, 47, 66, 0.40);
 cursor: pointer;
 fill: transparent;
 margin-right: 8px;
 border-radius: 2px;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+display: inline-flex;
 }
 
 .privacy-policy-link {
