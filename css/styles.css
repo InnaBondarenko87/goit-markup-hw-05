@@ -820,7 +820,7 @@ margin-left: 16px;
 }
 
 .accept{
-    display: flex;
+    display: block;
     color: var(--LIGHT-SLATE, #8E8F99);
     font-size: 12px;
     font-style: normal;
@@ -841,7 +841,6 @@ margin-left: 16px;
     margin-bottom: 16px;
 }
 
-.form-hero
 .form-label-hero{
     display: block;
     margin-bottom: 4px;
@@ -903,7 +902,7 @@ margin-left: 16px;
 .privacy-policy-link {
     color: #4D5AE5;
     text-decoration: underline;
-    line-height: 1.17;
+    line-height: 1.33;
     letter-spacing: 0.04em;
 }
 
