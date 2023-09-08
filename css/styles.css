@@ -880,16 +880,15 @@ margin-left: 16px;
     background-color:var(--secondary-color);
 }
 
-
 .accept-checkbox:checked + .accept > .review-form-own-checkbox{
     background-color:#404bbf;
     border: none;
-    /* fill:#FFFFFF; */
     fill:#F4F4FD;
 }
 
 .review-form-own-checkbox{
     display: inline-flex;
+    margin-right: 8px;
     justify-content: center;
     align-items: center;
     height: 16px;
